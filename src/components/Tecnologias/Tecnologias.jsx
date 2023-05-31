@@ -1,9 +1,8 @@
 import Accordion from "../Accordion/Accordion"
-import { useState } from "react";
 
 
 export const Tecnologias = () => {
-    const [list, setList] =  useState([
+    const list = [
         {
             title: 'Desarrollo Web',
             content: 'Iconos donde iran las tecnologias',
@@ -21,10 +20,19 @@ export const Tecnologias = () => {
             title: 'Servicios Externos',
             content: 'Iconos donde iran las tecnologias'
         }
-    ]);
+    ];
     return(
         <>
-            <h1>Nuestras tecnologías</h1>
+            <h1 className="text-black text-center" >Nuestras tecnologías</h1>
+
+            <div className="justify-end">
+                <p className="text-text-strong">
+                Nos enorgullece presentar las herramientas y sistemas innovadores que utilizamos para llevar a cabo nuestros proyectos. 
+                Combinamos la última tecnología con la excelencia operacional para ofrecer soluciones de alta calidad y rendimiento. 
+                Desde lenguajes de programación de vanguardia hasta plataformas de infraestructura modernas, nuestros recursos tecnológicos 
+                son clave para nuestro éxito.
+                </p>
+            </div>
 
             {
                 list.map((item, key ) => (
